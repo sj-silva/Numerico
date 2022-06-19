@@ -6,7 +6,7 @@ Abaixo mostramos o resultado do ajuste da curva $f(x)=sin(2x)cos(x/2)$ no interv
 </p>
 
 
-Neste trabalho escolhemos a **base canônica={**$1,x,x^2,\dots,x^n$**}** do espaço dos $\mathbb{P}_n(x)$. 
+Neste trabalho escolhemos a **base canônica={**$1,x,x^2,\dots,x^n$**}** do espaço $\mathbb{P}_n(x)$. 
 
 Deste modo teremos $$f(x)\approx a_0+a_1x+a_2x^2+\dots+a_nx^n$$
 
