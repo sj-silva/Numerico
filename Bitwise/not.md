@@ -1,6 +1,6 @@
-# NOT(~)
+ # NOT(~)
 
-### Unsigned Numbers
+* ### Unsigned Numbers
 
 | **Valor**        | **32 Bits** |
 |------------------|----------|
@@ -41,3 +41,6 @@ Considerando o código abaixo
 | ~x: | 11...010 |
 
 > Saída: $4294967295-3=4294967292$
+
+* ### Signed Numbers
+:information_source: A variação fica compreendida no intervalo $[-2^{31}, 2^{31}-1]$
