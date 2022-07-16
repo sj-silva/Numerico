@@ -44,3 +44,15 @@ Considerando o código abaixo
 
 * ### Signed Numbers
 :information_source: A variação fica compreendida no intervalo $[-2^{31}, 2^{31}-1]$
+
+|   **Valor**  | **32 Bits** |
+|:------------:|:-----------:|
+| mín=$-2^{31}$ |    10...000 |
+| máx=$2^{31}-1$  |    01...111 |
+
+### :fire: Complemento de 2
+Representação de inteiros negativos. Enumeramos 2 consequências dessa representação:
+* o zero passa a ter uma única representação
+* a operação de subtração é realizada como uma soma
+
+> Considere o exemplo de uma representação com 3 bits
