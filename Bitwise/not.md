@@ -56,3 +56,4 @@ Representação de inteiros negativos. Enumeramos 2 consequências dessa represe
 * a operação de subtração é realizada como uma soma
 
 > Considere o exemplo de uma representação com 3 bits
+> 
