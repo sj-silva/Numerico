@@ -90,3 +90,5 @@ Aplicando a fórmula $2^n+x$ podemos estimar os resultados dos seguintes código
 |  x: | 00...011 |      3     |
 |:---:|:--------:|:----------:|
 | ~x: | 11...100 | $2^{32}-4$ |
+
+Portanto a saída será $-4$
