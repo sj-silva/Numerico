@@ -37,3 +37,44 @@ void brian_kernighan(int n) {
     std::cout << "Total bits(Brian Kernighan): " << conta << std::endl;
 }
 ```
+
+### :fire: Lookup Table
+1. Considerando que um inteiro tem 32 bits dividimos em 4 blocos de 8 bits.
+
+| **00000000** | 00000000 | **00000000** | 00000000 |
+|:------------:|:--------:|--------------|----------|
+
+2. Cada bloco representa um número no intervalo $[0,255]$
+
+3. Criamos uma tabela de tamanho $256$  onde **table[i] = número de set bits do número i**
+
+| _table[0]=0_ |
+|:------------:|
+| _table[1]=1_ |
+| _table[2]=1_ |
+| _table[3]=2_ |
+| _table[4]=1_ |
+| _table[5]=2_ |
+
+4. Criamos a máscara **m=0xff=11111111**. Ao fazermos **table[n&m]** teremos como resultado o número de **set bits** do primeiro bloco. 
+
+5. Fazemos um loop com **n=n>>8**
+
+```cpp
+void lookupTable(int n) {
+    
+    int conta = 0;
+    conta+= table[n & 0xff];
+    
+    n = n >> 8;
+    conta += table[n & 0xff];
+   
+    n = n >> 8; 
+    conta += table[n & 0xff];
+    
+    n = n >> 8;
+    conta += table[n & 0xff];
+    
+    std::cout << "Total bits(Lookup Table): " << conta << std::endl;
+}
+```
